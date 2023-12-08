@@ -45,10 +45,7 @@ public class AfterActions {
 		}
 		String st = DestFile.toString();
 		System.out.println(st);
-		//test.log(LogStatus.FAIL, arg0.getName().toUpperCase()+"Failed with exception : "+arg0.getThrowable());
-		//Reporter.log("<a href=\"" + st + "\">Name of Screenshot</a>");
-		//reo.endTest(test);
-		//reo.flush();
+		
 		
 		
 		
