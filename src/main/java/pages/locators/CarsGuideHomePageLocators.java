@@ -13,19 +13,19 @@ public class CarsGuideHomePageLocators {
 	//a//*[contains(text(),'Sell my car')]
 	
 	
-	@FindBy(how=How.LINK_TEXT,using ="Buy + Sale")
+	@FindBy(how=How.LINK_TEXT,using ="buy + sell")
 	public WebElement buySaleLink;
 	
-	@FindBy(how=How.LINK_TEXT,using ="Reviews")
+	@FindBy(how=How.XPATH,using ="//li[2]//a[@class='uhf-top']")
 	public WebElement carReviewLink;
 	
-	@FindBy(how=How.LINK_TEXT,using ="News")
+	@FindBy(how=How.XPATH,using ="//li[3]//a[@class='uhf-top']")
 	public WebElement carNewsLink;
 	
-	@FindBy(how=How.LINK_TEXT,using ="Advice")
+	@FindBy(how=How.XPATH,using ="//li[4]//a[@class='uhf-top']")
 	public WebElement carAdviceLink;
 	
-	@FindBy(how=How.LINK_TEXT,using ="Pricing + Specs")
+	@FindBy(how=How.LINK_TEXT,using ="pricing + specs")
 	public WebElement pricingSpecsLink;
 	
 	@FindBy(how=How.XPATH,using ="*//li//a[contains(text(),'Sell my car')]")

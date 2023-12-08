@@ -15,7 +15,7 @@ When I move to buy+sell menu
  | Sell    |
  And click on "Search Cars" link
  And select carbrand as "BMW" from AnyMake dropdown
- And select carmodel as"1 SERIES" from SelectModel dropdown
+ And select carmodel as "1 Series" from SelectModel dropdown
  And select location as "NSW - Sydney" from SelectLocation dropdown
  And select price as "$80,000" from price dropdown
  And click on Find My Next Car button
