@@ -15,7 +15,7 @@ import io.cucumber.testng.CucumberOptions;
 
 
 @CucumberOptions(
-		plugin = {"json:target/RunCuke/cucumber.json","pretty","html:target/RunCuke/cucumber.html"},
+		plugin = {"json:target/RunCuke/cucumber.json","pretty","html:target/RunCuke/cucumber.html"},   //,"com.cucumber.listener.ExtentCucumberFormatter"
 		features = "src/test/resources/features",
 		glue = "steps",
 		tags = "@Search-Cars"
@@ -28,6 +28,16 @@ public class RunCuke extends AbstractTestNGCucumberTests{
 	@BeforeClass
 	public static void setup() {
 		
+	/*	
+		
+		ExtentCucumberFormatter.initiateExtentCucumberFormatter();
+		ExtentCucumberFormatter.loadConfig(new File("src/test/resources/extent-config.xml"));
+		
+		ExtentCucumberFormatter.addSystemInfo("Browser Name","Chrome");
+		ExtentCucumberFormatter.addSystemInfo("Browser version", "v120.0.6099.71");
+		ExtentCucumberFormatter.addSystemInfo("Selenium version", "v3.141.59");
+	*/	
+		
 		// Initiates the extent report and generate the outputt
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy hhmmss");
@@ -36,10 +46,10 @@ public class RunCuke extends AbstractTestNGCucumberTests{
 		String fileName = System.getProperty("user.dir")+"\\target\\Extend_Reports\\"+strDate+".html";
 		File newFile = new File(fileName);
 		ExtentCucumberFormatter.initiateExtentCucumberFormatter(newFile,false);
-		ExtentCucumberFormatter.loadConfig( new File("src/test/resources/extent-config.xml"));
+		ExtentCucumberFormatter.loadConfig( new File("src/test/resources/extent-config.xml"));     //extent-config
 		ExtentCucumberFormatter.addSystemInfo("Browser Name", "Chrome");
-		ExtentCucumberFormatter.addSystemInfo("Browser version", "119.0.6045.200");
-		ExtentCucumberFormatter.addSystemInfo("Selenium version", "3.141.59");
+		ExtentCucumberFormatter.addSystemInfo("Browser version", "v120.0.6099.71");
+		ExtentCucumberFormatter.addSystemInfo("Selenium version", "v3.141.59");
 		
 		
 		Map systemInfo = new HashMap();

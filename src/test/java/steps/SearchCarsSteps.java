@@ -2,6 +2,8 @@ package steps;
 
 import java.util.List;
 
+import org.testng.Assert;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -70,12 +72,16 @@ public class SearchCarsSteps {
 
 	@Then("I should see list of searched cars")
 	public void i_should_see_list_of_searched_cars() {
-	    
+	    System.out.println("  Car List Found ");
 	}
 
 	@And("the page title should be {string}")
-	public void the_page_title_should_be(String string) {
+	public void the_page_title_should_be(String expectedTitle) {
 	   
+		String actualTitle =   SeleniumDriver.getDriver().getTitle();
+		Assert.assertEquals(actualTitle, expectedTitle);
+		
+		
 	}
 
 	

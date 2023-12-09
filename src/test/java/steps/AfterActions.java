@@ -7,11 +7,6 @@ import java.util.Date;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.testng.Reporter;
-
-import com.relevantcodes.extentreports.LogStatus;
-
 import io.cucumber.java.After;
 import io.cucumber.java.Scenario;
 import utils.SeleniumDriver;
@@ -30,7 +25,7 @@ public class AfterActions {
 		}
 		*/
 		////////////////////////////////////
-		
+
 		TakesScreenshot scrShot = (TakesScreenshot) SeleniumDriver.getDriver();
 		Date date = new Date();
 		System.setProperty("org.uncommons.reportng.escape-output", "false");
