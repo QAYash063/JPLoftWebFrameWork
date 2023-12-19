@@ -36,7 +36,7 @@ public class CarsGuideHomePageLocators {
 	@FindBy(how=How.XPATH,using ="//*[contains(text(),'Search Cars')]")
 	public WebElement searchCarLink;
 	
-	@FindBy(how=How.LINK_TEXT,using ="Used Car")
+	@FindBy(how=How.XPATH,using ="//div[@class='uhf-child-menu'][1]//a[contains(text(),'Used')][1]")
 	public WebElement usedCarLink;
 	
 	

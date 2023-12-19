@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;Validate search car page&quot;, &quot;Acceptance testing to validate Search cars page is working fine.&quot;)">runScenario("Validate search car page", "Acceptance testing to validate Search cars page is working fine.")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;Validate search car page&quot;, &quot;Acceptance testing to validate Used Search cars page is working fine.&quot;)">runScenario("Validate search car page", "Acceptance testing to validate Used Search cars page is working fine.")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -126,35 +126,28 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Validate search car page&quot;, &quot;Acceptance testing to validate Search cars page is working fine.&quot;)">
-                  </a> <!-- runScenario("Validate search car page", "Acceptance testing to validate Search cars page is working fine.") -->
+                  <a name="runScenario(&quot;Validate search car page&quot;, &quot;Acceptance testing to validate Used Search cars page is working fine.&quot;)">
+                  </a> <!-- runScenario("Validate search car page", "Acceptance testing to validate Used Search cars page is working fine.") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Validate search car page","Acceptance testing to validate Search cars page is working fine.")</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;search-submittt&apos;]&quot;}
-  (Session info: chrome=120.0.6099.71)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+                  <span class="parameters">("Validate search car page","Acceptance testing to validate Used Search cars page is working fine.")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.110)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-BAAPTUD&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+System info: host: &apos;DESKTOP-BAAPTUD&apos;, ip: &apos;192.168.2.81&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60353}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 419e07e741ad07f5f44f51335ecc42fa
-*** Element info: {Using=xpath, value=//input[@id=&apos;search-submittt&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.110, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60516}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a01b332af0b5c6176f9ca2ebd679cadb
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
-	at pages.action.CarSearchPageActions.clickOnFindMyNextCarButton(CarSearchPageActions.java:48)
-	at steps.SearchCarsSteps.click_on_find_my_next_car_button(SearchCarsSteps.java:68)
-	at ✽.click on Find My Next Car button(file:///C:/Users/DELL/eclipse-workspace/JPLoftWebFramework/src/test/resources/features/SearchCars.feature:21)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at steps.UsedCarSteps.the_page_title_should_be_on_used_search_car_page(UsedCarSteps.java:62)
+	at ✽.the page title should be &quot;Used Kia Rio Under 50,000 for Sale SA - Second Hand Kia Rio Under 50,000 in SA | CarsGuide&quot; on Used Search car Page(file:///C:/Users/DELL/eclipse-workspace/JPLoftWebFramework/src/test/resources/features/UsedCarSearch.feature:25)
 ... Removed 5 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -227,12 +220,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.RunCuke')
-data.setCell(0, 3, 43882);
+data.setCell(0, 3, 16925);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 43 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -260,22 +253,22 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runner.RunCuke</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@766a52f5)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@7a682d35)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">1220 ms</span>
+                <span class="method-start">1026 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">runScenario("Validate search car page", "Acceptance testing to validate Search cars page is working fine.")</span>
-                <span class="method-start">1410 ms</span>
+                <span class="method-name">runScenario("Validate search car page", "Acceptance testing to validate Used Search cars page is working fine.")</span>
+                <span class="method-start">1236 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">45310 ms</span>
+                <span class="method-start">18187 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

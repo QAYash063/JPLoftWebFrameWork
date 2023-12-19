@@ -41,7 +41,7 @@ public class SearchCarsSteps {
 
 	@And("click on {string} link")
 	public void click_on_link(String searchCars) {
-	  carsGuideHomePageActions.clickOnSearchCarsMenu();
+	  carsGuideHomePageActions.clickOnSearchCarsMenu();;
 	}
 
 	@And("select carbrand as {string} from AnyMake dropdown")
@@ -79,6 +79,7 @@ public class SearchCarsSteps {
 	public void the_page_title_should_be(String expectedTitle) {
 	   
 		String actualTitle =   SeleniumDriver.getDriver().getTitle();
+		System.out.println(actualTitle);
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 		

@@ -16,9 +16,9 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		plugin = {"json:target/RunCuke/cucumber.json","pretty","html:target/RunCuke/cucumber.html"},   //,"com.cucumber.listener.ExtentCucumberFormatter"
-		features = "src/test/resources/features",
+		features = "src/test/resources/features/UsedCarSearch.feature",
 		glue = "steps",
-		tags = "@Search-Cars"
+		tags = "@Used-Search-Cars"
 		
 		
 		
