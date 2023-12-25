@@ -29,6 +29,7 @@ public class UsedCarsSearchPageActions {
 
 		Select selectCarModel = new Select(usedCarsSearchPageLocators.usedCarModelsDropDown);
 		selectCarModel.selectByVisibleText(usedCarModel);
+		
 	}
 
 	public void selectCarLocation(String usedcarLocation) {

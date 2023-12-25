@@ -32,6 +32,7 @@ public class UsedCarSteps {
 	public void select_car_model_on_used_search_car_page(List<String> list) {
 		String menu = list.get(1);
 		System.out.println(menu);
+		usedCarsSearchPageActions.selectCarModel(menu);
 	}
 
 	@And("select location as {string} from SelectLocation dropdown on Used Search car Page")
@@ -64,62 +65,4 @@ public class UsedCarSteps {
 		
 	}
 	
-	
-	
-	/*
-	CarsGuideHomePageActions carsGuideHomePageActions = new CarsGuideHomePageActions();
-	
-	//CarSearchPageActions carSearchPageActions = new CarSearchPageActions();
-	UsedCarsSearchPageActions usedCarsSearchPageActions = new UsedCarsSearchPageActions(): 
-	
-	
-	@And("click on {string} link on Used Search car Page")
-	public void click_on_link(String usedCars) {
-	  carsGuideHomePageActions.clickOnUsedCarMenu();
-	}
-	
-	@And("select carbrand as {string} from AnyMake dropdown on Used Search car Page")
-	public void select_carbrand_as_from_any_make_dropdown(String usedCarBrand) {
-		usedCarsSearchPageActions.selectCarMaketion(usedCarBrand);
-	    
-	}
-
-	@And("select car model on Used Search car Page")
-	public void select_car_model(List<String> list) throws Throwable {
-	  
-		String menu = list.get(1);
-		System.out.println(menu);
-	}
-
-	@And("select location as {string} from SelectLocation dropdown on Used Search car Page")
-	public void select_location_as_from_select_location_dropdown(String carLocation) {
-	   usedCarsSearchPageActions.selectCarLocation(carLocation);
-	}
-
-	@And("select price as {string} from price dropdown on Used Search car Page")
-	public void select_price_as_from_price_dropdown(String carPrice) {
-	    usedCarsSearchPageActions.selectCarPrice(carPrice);
-	}
-
-	@And("click on Find My Next Car button on Used Search car Page")
-	public void click_on_find_my_next_car_button() {
-	    usedCarsSearchPageActions.clickOnFindMyNextCarButton();
-	}
-
-	@Then("I should see list of used cars")
-	public void i_should_see_list_of_searched_cars() {
-	    System.out.println("  Car List Found ");
-	}
-
-	@And("the page title should be {string} on Used Search car Page")
-	public void the_page_title_should_be(String expectedTitle) {
-	   
-		String actualTitle =   SeleniumDriver.getDriver().getTitle();
-		Assert.assertEquals(actualTitle, expectedTitle);
-		
-		
-	}
-
-	
-*/
 }

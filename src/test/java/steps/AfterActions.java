@@ -13,7 +13,7 @@ import utils.SeleniumDriver;
 
 public class AfterActions {
 	
-	@After
+	@After("@Used-Search-Cars")
 	public static void tearDown(Scenario scenario) {
 		/*
 		WebDriver driver = SeleniumDriver.getDriver();
