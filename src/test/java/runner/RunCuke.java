@@ -17,7 +17,8 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		plugin = {"json:target/RunCuke/cucumber.json","pretty","html:target/RunCuke/cucumber.html"},   //,"com.cucumber.listener.ExtentCucumberFormatter"
 		features = "src/test/resources/features",
-		glue = "steps"
+		glue = "steps",
+		tags = "@Positive-InquireForm"
 		
 		
 		

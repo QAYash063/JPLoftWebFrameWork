@@ -5,7 +5,7 @@ import utils.SeleniumDriver;
 
 public class BeforeActions {
 	
-	@Before("@Search-Cars")
+	@Before
 	public static void setUp() {
 		
 		SeleniumDriver.setUpDriver();
